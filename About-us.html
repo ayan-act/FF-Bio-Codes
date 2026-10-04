@@ -1,388 +1,78 @@
 <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us | FF Bio Code – Free Fire Bio Code Generator</title>
-  <meta name="description" content="Learn about FF Bio Code – the #1 Free Fire bio code generator for stylish FF bios with colours, symbols, and fonts. Trusted by millions of Free Fire players.">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&amp;family=Nunito:wght@400;600;700&amp;display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg:        #1a1b26;
-      --surface:   #1a1b26;
-      --card:      #1a1b26;
-      --border:    #252b3e;
-      --accent:    #6A79B8;
-      --accent2:   #9A7DD1;
-      --glow:      #5b6cb3;
-      --text:      #e8eaf0;
-      --muted:     #8a90a8;
-      --heading:   #ffffff;
-      --radius:    14px;
-    }
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | FF Bio Code – Free Fire Bio Codes &amp; Tools</title>
+<meta name="description" content="Learn about us FF Bio Code – the #1 Free Fire bio code generator for stylish FF bios with colours, symbols, and fonts..">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800;900&amp;family=Nunito:wght@400;600;700&amp;display=swap" rel="stylesheet">
 
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+<style>
+  /* About page only — intentionally scoped so the existing site header and footer are untouched. */
+  .about-page {
+    --about-bg: #030b18; --about-surface: rgba(13,24,45,.72); --about-border: rgba(145,165,208,.18);
+    --about-text: #f4f6ff; --about-muted: #b6bed2; --about-purple: #9b4dff; --about-blue: #297dff;
+    --about-cyan: #20d9ff; --about-orange: #ff792d; color: var(--about-text); background: var(--about-bg);
+    font-family: 'Nunito',sans-serif; line-height: 1.65; overflow: hidden;
+  }
+  .about-page *,.about-page *::before,.about-page *::after{box-sizing:border-box}.about-page a{color:inherit}.about-container{width:min(1120px,calc(100% - 48px));margin:0 auto}
+  .about-hero{position:relative;isolation:isolate;min-height:365px;display:grid;place-items:center;padding:78px 24px 88px;text-align:center;overflow:hidden;background:radial-gradient(circle at 50% 52%,rgba(113,43,226,.33),transparent 27%),radial-gradient(ellipse 30% 70% at 93% 37%,rgba(255,102,38,.18),transparent 56%),linear-gradient(115deg,#020a16 0%,#071126 48%,#0d0a1d 100%)}
+  .about-hero::before{content:'BOOYAH!';position:absolute;z-index:-1;top:93px;left:clamp(-42px,4vw,65px);color:transparent;font:900 clamp(3.2rem,9vw,8rem)/1 'Orbitron',sans-serif;letter-spacing:.02em;-webkit-text-stroke:1px rgba(84,127,255,.17);transform:rotate(-9deg);user-select:none}
+  .about-hero::after{content:'';position:absolute;inset:0;z-index:-1;opacity:.52;background-image:radial-gradient(circle,rgba(163,126,255,.7) 1px,transparent 1.7px);background-size:58px 58px;mask-image:linear-gradient(90deg,transparent,#000 25%,#000 75%,transparent);pointer-events:none}
+  .about-hero__content{position:relative;z-index:2;max-width:840px}.about-badge,.about-eyebrow{font-family:'Orbitron',sans-serif;font-size:.7rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+  .about-badge{display:inline-flex;align-items:center;gap:8px;margin-bottom:17px;padding:6px 15px;color:#ece5ff;border:1px solid rgba(155,77,255,.82);border-radius:999px;background:linear-gradient(90deg,rgba(127,57,239,.28),rgba(25,102,255,.24));box-shadow:0 0 24px rgba(128,62,255,.28),inset 0 0 14px rgba(139,79,255,.18)}.about-badge svg{width:15px;height:15px;fill:#a76bff}
+  .about-hero h1,.about-page h2,.about-page h3{font-family:'Orbitron',sans-serif}.about-hero h1{margin:0;font-size:clamp(2rem,5.2vw,4rem);font-weight:900;line-height:1.18;letter-spacing:-.055em}.about-hero h1 span{background:linear-gradient(95deg,#a352ff 5%,#8057ff 37%,#f067ab 65%,#ff853b 95%);-webkit-background-clip:text;background-clip:text;color:transparent}.about-hero p{max-width:610px;margin:15px auto 0;color:#e3e7f4;font-size:clamp(.97rem,2vw,1.1rem)}
+  .about-hero__sparks{position:absolute;inset:0;z-index:1;pointer-events:none}.about-hero__sparks i{position:absolute;width:3px;height:16px;border-radius:50%;background:var(--about-orange);box-shadow:0 0 8px var(--about-orange);transform:rotate(-38deg);opacity:.65}.about-hero__sparks i:nth-child(1){top:23%;left:14%}.about-hero__sparks i:nth-child(2){top:51%;left:8%;background:var(--about-blue);box-shadow:0 0 8px var(--about-blue)}.about-hero__sparks i:nth-child(3){top:23%;right:16%}.about-hero__sparks i:nth-child(4){bottom:25%;right:7%}
+  .about-hero__character{position:absolute;z-index:0;right:max(2.5vw,calc((100% - 1280px)/2));bottom:-36px;width:clamp(145px,21vw,280px);height:300px;opacity:.55;filter:drop-shadow(0 0 28px rgba(255,101,34,.22))}.about-hero__character::before{content:'';position:absolute;right:20%;top:18px;width:107px;height:107px;border:3px solid rgba(105,124,169,.65);border-radius:47% 53% 40% 50%;background:linear-gradient(135deg,#10192c,#020712 76%);box-shadow:inset -18px -10px 0 rgba(255,105,41,.12),20px -11px 0 -16px rgba(255,117,44,.85);transform:rotate(17deg)}.about-hero__character::after{content:'';position:absolute;right:1%;top:107px;width:174px;height:220px;clip-path:polygon(34% 0,68% 3%,100% 42%,88% 100%,11% 100%,0 45%);border:2px solid rgba(86,103,145,.55);background:linear-gradient(128deg,rgba(31,48,81,.9),rgba(3,10,25,.9) 65%);box-shadow:inset -30px 0 35px rgba(255,104,34,.13);transform:rotate(7deg)}
+  .about-hero__divider{position:absolute;z-index:3;bottom:-1px;left:-2%;width:104%;height:33px;background:var(--about-bg);clip-path:polygon(0 34%,49% 100%,100% 32%,100% 100%,0 100%)}.about-hero__divider::before{content:'';position:absolute;top:2px;left:0;width:100%;height:2px;background:linear-gradient(90deg,#8f4fff,#d69bff 50%,#7f49f5);box-shadow:0 0 13px #9358ff}
+  .about-content{position:relative;padding:48px 0 72px;background:radial-gradient(circle at 70% 17%,rgba(40,76,161,.1),transparent 27%),var(--about-bg)}.about-section{padding:42px 0}.about-section+.about-section{border-top:1px solid rgba(157,178,225,.14)}.about-eyebrow{margin:0 0 7px;color:#a55cff}.about-page h2{margin:0 0 17px;font-size:clamp(1.45rem,3vw,2rem);font-weight:800;line-height:1.28;letter-spacing:-.04em}.about-copy{margin:0;color:var(--about-muted);font-size:1rem}.about-copy+.about-copy{margin-top:14px}
+  .about-purpose{display:grid;grid-template-columns:minmax(0,.98fr) minmax(430px,1fr);align-items:center;gap:clamp(38px,7vw,88px)}.about-purpose__intro{max-width:470px}.about-feature-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}.about-feature-card,.about-info-card{position:relative;overflow:hidden;border:1px solid var(--about-border);border-radius:10px;background:linear-gradient(145deg,rgba(19,33,60,.84),rgba(9,18,35,.68));box-shadow:inset 0 1px rgba(255,255,255,.025),0 14px 35px rgba(0,0,0,.12)}.about-feature-card{min-height:180px;padding:22px 21px;transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease}.about-feature-card::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at 20% 0,rgba(132,78,255,.12),transparent 46%);pointer-events:none}.about-feature-card:hover{transform:translateY(-5px);border-color:rgba(150,105,255,.7);box-shadow:0 15px 38px rgba(36,17,100,.28),0 0 22px rgba(102,62,255,.1)}
+  .about-feature-icon{display:grid;place-items:center;width:38px;height:38px;margin-bottom:17px;border-radius:10px}.about-feature-icon svg{width:27px;height:27px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.about-feature-card:nth-child(1) .about-feature-icon{color:#a454ff;background:rgba(164,84,255,.12)}.about-feature-card:nth-child(2) .about-feature-icon{color:#ff7a25;background:rgba(255,122,37,.12)}.about-feature-card:nth-child(3) .about-feature-icon{color:#2696ff;background:rgba(38,150,255,.12)}.about-feature-card:nth-child(4) .about-feature-icon{color:#23dc9b;background:rgba(35,220,155,.12)}.about-feature-card h3,.about-info-card h3{position:relative;z-index:1;margin:0 0 7px;font-size:.9rem;line-height:1.4;font-weight:800}.about-feature-card p,.about-info-card p{position:relative;z-index:1;margin:0;color:var(--about-muted);font-size:.91rem;line-height:1.55}
+  .about-tools{display:grid;grid-template-columns:minmax(350px,.85fr) minmax(0,1.15fr);align-items:center;gap:clamp(34px,7vw,88px)}.about-visual{position:relative;min-height:250px;border:1px solid #7950e7;border-radius:13px;overflow:hidden;background:radial-gradient(ellipse at 50% 86%,rgba(29,119,255,.8) 0 3%,transparent 16%),radial-gradient(circle at 50% 48%,rgba(118,41,255,.33),transparent 39%),linear-gradient(145deg,#0e092e,#06112c);box-shadow:inset 0 0 40px rgba(110,31,241,.18),0 0 28px rgba(83,58,255,.08)}.about-visual::before,.about-visual::after{content:'';position:absolute;border:1px solid rgba(104,69,255,.75);border-radius:50%;transform:rotate(-23deg)}.about-visual::before{width:280px;height:92px;top:63px;left:calc(50% - 140px);box-shadow:0 0 14px rgba(255,104,35,.55)}.about-visual::after{width:355px;height:126px;top:46px;left:calc(50% - 177px);border-color:rgba(238,76,255,.32)}.about-visual__floor{position:absolute;width:155px;height:33px;left:calc(50% - 77px);bottom:38px;border:2px solid #1a78ff;border-radius:50%;box-shadow:0 0 10px #1670ff,inset 0 0 16px #1f7eff}.about-visual__floor::after{content:'';position:absolute;width:235px;height:58px;left:-42px;top:-14px;border:1px solid rgba(57,80,253,.55);border-radius:50%}.about-visual__mark{position:absolute;z-index:1;top:50%;left:50%;color:white;font:900 5rem/1 'Orbitron',sans-serif;font-style:italic;text-shadow:0 0 10px #fff,0 0 20px #7549ff;transform:translate(-50%,-50%) skew(-12deg)}.about-visual__mark::after{content:'';position:absolute;left:-9px;bottom:-8px;width:93px;height:7px;background:linear-gradient(90deg,#793cff,#167bff);transform:skew(42deg);box-shadow:0 0 10px #7465ff}.about-tools__copy{max-width:550px}
+  .about-commitment{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(350px,.85fr);align-items:center;gap:clamp(35px,8vw,105px)}.about-trust-card{display:flex;align-items:center;gap:20px;padding:28px 25px;border:1px solid rgba(255,121,45,.42);border-radius:11px;background:linear-gradient(125deg,rgba(91,38,20,.38),rgba(20,24,43,.72));box-shadow:inset 0 1px rgba(255,187,122,.08),0 14px 35px rgba(0,0,0,.16)}.about-trust-card svg{flex:0 0 auto;width:64px;height:64px;fill:none;stroke:var(--about-orange);stroke-width:2.5;stroke-linejoin:round;filter:drop-shadow(0 0 8px rgba(255,121,45,.18))}.about-trust-card h3{margin:0 0 8px;color:var(--about-orange);font-size:.94rem}.about-trust-card p{margin:0;color:#d6dae6;font-size:.9rem}
+  .about-info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding-top:17px}.about-info-card{min-height:254px;padding:24px}.about-info-card::before{position:absolute;right:14px;bottom:-27px;color:rgba(142,160,207,.11);font-size:5.8rem;line-height:1;font-family:Arial,sans-serif}.about-info-card--disclaimer::before{content:'!';border:4px solid rgba(142,160,207,.11);border-radius:50%;width:55px;height:55px;display:grid;place-items:center;font-size:3rem}.about-info-card--contact::before{content:'✉'}.about-info-card--community::before{content:'♟'}.about-info-card .about-eyebrow{font-size:.64rem}.about-info-card h3{font-size:1.01rem;margin-bottom:13px}.about-info-card p+p{margin-top:12px}.about-contact-line{display:inline-flex;gap:9px;align-items:center;margin-top:15px;color:#dee4f8;font-size:.88rem;text-decoration:none}.about-contact-line svg{width:19px;height:19px;color:#ae5cff;fill:none;stroke:currentColor;stroke-width:2}.about-socials{position:relative;z-index:1;display:flex;gap:10px;margin-top:15px}.about-socials a{display:grid;place-items:center;width:34px;height:34px;color:#cbd5ed;border:1px solid rgba(150,167,207,.3);border-radius:50%;text-decoration:none;transition:transform .2s ease,color .2s ease,border-color .2s ease}.about-socials a:hover{transform:translateY(-3px);color:#fff;border-color:#8a5cff}.about-socials svg{width:17px;height:17px;fill:currentColor}.about-socials a:nth-child(2):hover{color:#ff4545;border-color:#ff4545}.about-socials a:nth-child(3):hover{color:#37bce8;border-color:#37bce8}.about-socials a:nth-child(4):hover{color:#ff4c9a;border-color:#ff4c9a}
+  @media(max-width:800px){.about-purpose,.about-tools,.about-commitment{grid-template-columns:1fr}.about-purpose__intro,.about-tools__copy{max-width:100%}.about-tools__copy{order:-1}.about-info-grid{grid-template-columns:1fr}.about-info-card{min-height:0}.about-hero__character{opacity:.27;right:-28px}}@media(max-width:540px){.about-container{width:min(100% - 32px,1120px)}.about-hero{min-height:340px;padding:69px 18px 75px}.about-hero::before{top:91px;font-size:3.1rem}.about-hero h1{letter-spacing:-.07em}.about-hero p{font-size:.92rem}.about-content{padding-top:23px}.about-section{padding:33px 0}.about-feature-grid{gap:11px}.about-feature-card{min-height:164px;padding:18px 15px}.about-feature-card h3{font-size:.77rem}.about-feature-card p{font-size:.8rem}.about-visual{min-height:220px}.about-trust-card{align-items:flex-start;padding:22px 18px}.about-trust-card svg{width:54px;height:54px}}@media(prefers-reduced-motion:reduce){.about-page *,.about-page *::before,.about-page *::after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important}}
+  .about-policy-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.about-policy-card{padding:26px}.about-policy-card h3{font-size:1rem}.about-creator{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(300px,.85fr);align-items:center;gap:clamp(35px,8vw,90px)}.about-creator__actions{display:flex;flex-wrap:wrap;gap:11px;margin-top:22px}.about-creator__actions a{padding:9px 16px;border:1px solid rgba(155,77,255,.65);border-radius:8px;background:rgba(123,67,221,.16);color:#f4f6ff;font:800 .7rem 'Orbitron',sans-serif;letter-spacing:.05em;text-decoration:none;text-transform:uppercase;transition:transform .2s ease,background .2s ease}.about-creator__actions a:hover{transform:translateY(-3px);background:rgba(123,67,221,.32)}.about-creator__portrait{position:relative;max-width:410px;margin-left:auto;padding:10px;border:1px solid rgba(246,213,148,.34);border-radius:20px;background:rgba(255,255,255,.05);box-shadow:0 28px 48px rgba(0,0,0,.32),0 0 36px rgba(155,77,255,.11);transform:rotate(1.2deg)}.about-creator__portrait img{display:block;width:100%;aspect-ratio:1/1;border-radius:12px;object-fit:cover;background:#111}.about-creator__portrait figcaption{position:absolute;right:23px;bottom:22px;padding:8px 11px;border:1px solid rgba(246,213,148,.2);border-radius:9px;background:rgba(12,11,10,.67);color:#f7ead5;font-size:.78rem;font-weight:700}.about-creator__portrait figcaption strong{display:block;color:#f6d594;font:800 .62rem 'Orbitron',sans-serif;letter-spacing:.1em}.about-reveal{opacity:0;transform:translateY(14px)}.about-reveal.about-visible{opacity:1;transform:translateY(0);transition:opacity .52s ease-out,transform .52s ease-out}@media(max-width:800px){.about-policy-grid{grid-template-columns:1fr}.about-creator{grid-template-columns:1fr}.about-creator__portrait{margin:0 auto}}
+  .about-socials a[aria-label="Telegram"]{display:none}
+</style>
 
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: 'Nunito', sans-serif;
-      font-size: 1rem;
-      line-height: 1.8;
-      min-height: 100vh;
-    }
-
-    /* ── HERO ── */
-    .hero {
-      position: relative;
-      overflow: hidden;
-      text-align: center;
-      padding: 80px 24px 60px;
-      background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(255,107,0,0.13) 0%, transparent 70%),
-                  linear-gradient(180deg, #12151f 0%, var(--bg) 100%);
-      border-bottom: 1px solid var(--border);
-    }
-    .hero::before {
-      content: '';
-      position: absolute; inset: 0;
-      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ff6b00' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-      pointer-events: none;
-    }
-    .hero-badge {
-      display: inline-block;
-      background: linear-gradient(90deg, var(--accent), var(--accent2));
-      color: #0a0c12;
-      font-family: 'Orbitron', monospace;
-      font-size: 0.68rem;
-      font-weight: 800;
-      letter-spacing: 2px;
-      padding: 5px 16px;
-      border-radius: 50px;
-      margin-bottom: 20px;
-      text-transform: uppercase;
-    }
-    .hero h1 {
-      font-family: 'Orbitron', monospace;
-      font-size: clamp(2rem, 5vw, 3.2rem);
-      font-weight: 800;
-      color: var(--heading);
-      line-height: 1.15;
-      margin-bottom: 16px;
-      text-shadow: 0 0 40px var(--glow);
-    }
-    .hero h1 span { color: var(--accent); }
-    .hero p {
-      max-width: 640px;
-      margin: 0 auto;
-      color: var(--muted);
-      font-size: 1.05rem;
-    }
-
-    /* ── LAYOUT ── */
-    .container {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-    .content {
-      padding: 60px 0 80px;
-    }
-
-    /* ── SECTION ── */
-    .section {
-      margin-bottom: 52px;
-      animation: fadeUp 0.6s ease both;
-    }
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(22px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-
-    .section-label {
-      font-family: 'Orbitron', monospace;
-      font-size: 0.62rem;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 8px;
-    }
-    .section h2 {
-      font-family: 'Orbitron', monospace;
-      font-size: clamp(1.1rem, 3vw, 1.45rem);
-      font-weight: 700;
-      color: var(--heading);
-      margin-bottom: 16px;
-      line-height: 1.3;
-    }
-    .section p {
-      color: var(--text);
-      margin-bottom: 14px;
-    }
-    .section p:last-child { margin-bottom: 0; }
-
-    /* ── CARD GRID ── */
-    .card-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 18px;
-      margin-top: 24px;
-    }
-    .card {
-      background: var(--card);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 24px 22px;
-      transition: border-color 0.25s, transform 0.25s;
-    }
-    .card:hover {
-      border-color: var(--accent);
-      transform: translateY(-4px);
-    }
-    .card-icon {
-      font-size: 1.8rem;
-      margin-bottom: 10px;
-    }
-    .card h3 {
-      font-family: 'Orbitron', monospace;
-      font-size: 0.85rem;
-      color: var(--heading);
-      margin-bottom: 8px;
-    }
-    .card p {
-      font-size: 0.9rem;
-      color: var(--muted);
-      margin: 0;
-    }
-
-    /* ── HIGHLIGHT BOX ── */
-    .highlight {
-      background: linear-gradient(135deg, rgba(255,107,0,0.08) 0%, rgba(255,215,0,0.05) 100%);
-      border-left: 4px solid var(--accent);
-      border-radius: 0 var(--radius) var(--radius) 0;
-      padding: 20px 24px;
-      margin: 24px 0;
-    }
-    .highlight p {
-      margin: 0;
-      font-size: 1rem;
-      color: var(--text);
-    }
-    .highlight strong { color: var(--accent2); }
-
-    /* ── DISCLAIMER ── */
-    .disclaimer {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      padding: 28px 26px;
-      margin-top: 52px;
-    }
-    .disclaimer .disclaimer-title {
-      font-family: 'Orbitron', monospace;
-      font-size: 0.75rem;
-      letter-spacing: 2.5px;
-      text-transform: uppercase;
-      color: var(--muted);
-      margin-bottom: 12px;
-    }
-    .disclaimer p {
-      font-size: 0.9rem;
-      color: var(--muted);
-      margin-bottom: 10px;
-    }
-    .disclaimer p:last-child { margin-bottom: 0; }
-
-    /* ── CONTACT STRIP ── */
-    .contact-strip {
-      background: linear-gradient(90deg, rgba(255,107,0,0.10), rgba(255,215,0,0.07));
-      border: 1px solid rgba(255,107,0,0.25);
-      border-radius: var(--radius);
-      padding: 30px 26px;
-      margin-top: 52px;
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 20px;
-      justify-content: space-between;
-    }
-    .contact-strip h3 {
-      font-family: 'Orbitron', monospace;
-      font-size: 1rem;
-      color: var(--heading);
-      margin-bottom: 6px;
-    }
-    .contact-strip p {
-      font-size: 0.92rem;
-      color: var(--muted);
-      max-width: 480px;
-      margin: 0;
-    }
-    .contact-btn {
-      display: inline-block;
-      background: linear-gradient(90deg, var(--accent), #ff9a00);
-      color: #0a0c12;
-      font-family: 'Orbitron', monospace;
-      font-size: 0.78rem;
-      font-weight: 800;
-      letter-spacing: 1px;
-      padding: 12px 26px;
-      border-radius: 8px;
-      text-decoration: none;
-      white-space: nowrap;
-      transition: opacity 0.2s, transform 0.2s;
-      flex-shrink: 0;
-    }
-    .contact-btn:hover { opacity: 0.88; transform: scale(1.03); }
-
-    /* ── DIVIDER ── */
-    .divider {
-      border: none;
-      border-top: 1px solid var(--border);
-      margin: 52px 0;
-    }
-
-    @media (max-width: 560px) {
-      .contact-strip { flex-direction: column; align-items: flex-start; }
-    }
-  </style>
-
-
-
-<!-- ═══════════════ HERO ═══════════════ -->
-<section class="hero">
-  <div class="hero-badge">About Us</div>
-  <h1>Welcome to <span>FF Bio Code</span></h1>
-  <p>Your go-to destination for stylish Free Fire bio codes, colour codes, and the most powerful FF Bio Code Generator on the web.</p>
-</section>
-
-<!-- ═══════════════ MAIN CONTENT ═══════════════ -->
-<main class="content">
-  <div class="container">
-
-    <!-- 1. Introduction -->
-    <div class="section">
-      <div class="section-label">Who We Are</div>
-      <h2>The Story Behind FFBiocodes</h2>
-      <p>
-        Welcome to <strong>FFBiocodes</strong> — a dedicated platform built for Free Fire players who want to stand out in the game. Whether you are a casual gamer or a competitive squad leader, your in-game profile is the first thing other players notice. That is exactly why we created this website — to help every Free Fire player craft a bio that truly represents their personality and style.
-      </p>
-      <p>
-        At <a href="https://ffbiocodes.com/" style="color:var(--accent);text-decoration:none;font-weight:700;">ffbiocodes</a>, we provide a clean, simple, and powerful experience where you can generate, discover, and copy stylish <strong>Free Fire bio codes</strong> with unique symbols, colour fonts, and creative text styles — all completely free of charge.
-      </p>
-    </div>
-
-    <!-- 2. Mission -->
-    <div class="section">
-      <div class="section-label">Our Mission</div>
-      <h2>Why We Built This Platform</h2>
-      <p>
-        Our mission is straightforward — to make it super easy for every Free Fire gamer to create a cool, unique, and stylish profile bio without any technical knowledge. We know that not every player knows how to use colour codes or special font generators on their own. That is where we step in.
-      </p>
-      <div class="highlight">
-        <p><strong>We believe every gamer deserves a profile that looks legendary.</strong> From flashy coloured usernames to artistic bio descriptions with symbols and emojis, Free Fire Bio Code gives you the tools to make it happen in just a few clicks.</p>
-      </div>
-      <p>
-        We are committed to keeping this platform free, beginner-friendly, and constantly updated with the latest bio styles and trends in the Free Fire community.
-      </p>
-    </div>
-
-    <!-- 3 & 4. Content + Generator -->
-    <div class="section">
-      <div class="section-label">What We Offer</div>
-      <h2>Generate &amp; Discover Your Perfect Free Fire Bio Code</h2>
-      <p>
-        ffbiocodes (Free Fire Bio Code) is more than just a collection of bios — it is a complete creative toolkit for Free Fire players. Here is what you will find on our website:
-      </p>
-
-      <div class="card-grid">
-        <div class="card">
-        <div class="card-icon"></div>   
-          <h3>FF Bio Code Generator</h3>
-          <p>Type your text and instantly generate a stylish bio with colour codes, symbols, and custom fonts ready to paste.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon"></div>
-          <h3>Free Fire Bio Colour Codes</h3>
-          <p>Explore a full library of Free Fire colour codes — red, blue, gold, green, and more for your username and bio.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon"></div>
-          <h3>Stylish FF Bio Templates</h3>
-          <p>Browse hundreds of ready-made stylish bio ideas crafted for different player styles, guilds, and roles.</p>
-        </div>
-        <div class="card">
-          <div class="card-icon"></div>
-          <h3>One-Click Copy</h3>
-          <p>No complicated steps — just find your favourite bio code and copy it directly to your Free Fire profile.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- 5 & 6. Stylish Bios + #1 Tool -->
-    <div class="section">
-      <div class="section-label">Our Strength</div>
-      <h2>The #1 Free Fire Bio Code Generator Website</h2>
-      <p>
-        Finding a reliable <strong>Free Fire Bio Code Generator</strong> online can feel overwhelming — most websites are cluttered, outdated, or difficult to use on mobile. FF Bio Code was designed differently. We focused on building the cleanest and most accurate tool available, making it the top choice for millions of Free Fire players worldwide.
-      </p>
-      <p>
-        Our generator supports all the official <strong>Free Fire bio colour codes</strong> and special character formatting that works directly inside the game. You can personalise your bio with vibrant text colours, aesthetic symbols, decorative borders, and stylish fonts — all formatted correctly so they display perfectly in your Free Fire profile.
-      </p>
-      <p>
-        Whether you are looking for a fierce warrior bio, a funny squad intro, or a cool solo player description, our collection and generator have something for everyone. We publish new bio styles regularly, keeping up with the evolving Free Fire meta and community trends.
-      </p>
-    </div>
-
-    <!-- 7. Accuracy & Trust -->
-    <div class="section">
-      <div class="section-label">Reliability</div>
-      <h2>Accurate, Tested &amp; Trusted Free Fire Bio Codes</h2>
-      <p>
-        Every single bio code on FF Bio Code is manually verified before being published. We test all codes inside Free Fire to ensure the colour formatting, symbols, and special fonts display exactly as intended. You will never get a broken or non-working code from our platform.
-      </p>
-      <p>
-        Our team stays updated with every Free Fire patch and update to make sure our codes remain compatible with the latest version of the game. We take accuracy seriously because we understand how frustrating it can be to copy a code that does not work in-game.
-      </p>
-      <div class="highlight">
-        <p><strong>Trusted by Free Fire players across India, Vietnam, Thailand, Indonesia, Singapore, Bangladesh, Indonesia, United States, Brazil, Mexico, and beyond</strong> — ffbiocodes has earned its reputation as the most dependable source for FF bio colour codes and generators.</p>
-      </div>
-    </div>
-
-    <hr class="divider">
-
-    <!-- 8. Disclaimer -->
-    <div class="disclaimer">
-      <div class="disclaimer-title">⚠ Important Disclaimer</div>
-      <p>
-        ffbiocodes (<a href="https://ffbiocodes.com/" style="color:var(--accent);text-decoration:none;">https://ffbiocodes.com/</a>) is an independent fan-made website created for informational and creative purposes only. We are <strong>not affiliated with, endorsed by, or officially connected to Garena, Free Fire, or any of their subsidiaries or partners</strong> in any way.
-      </p>
-      <p>
-        Free Fire is a registered trademark of Garena International. All game-related trademarks, logos, and content belong to their respective owners. Our website simply provides tools and resources to help players customise their in-game profiles using publicly available formatting options within Free Fire.
-      </p>
-      <p>
-        We do not collect any in-game account credentials, personal data, or sensitive information. Please use our tools responsibly and in accordance with Free Fire's official terms of service.
-      </p>
-    </div>
-
-    <!-- 9. Contact / Support -->
-    <div class="contact-strip">
-      <div>
-        <h3>We'd Love to Hear from You</h3>
-        <p>
-          Have a suggestion for a new bio style? Found a code that is not working? Want to collaborate? Our team is always ready to help. Reach out to us and we will get back to you as soon as possible.
-        </p>
-      </div>
-      <a class="contact-btn" href="/contact-us/" target="_blank" rel="noopener">Contact Us →</a>
-    </div>
-
-    <!-- 10. Community Ending -->
-    <div class="section" style="margin-top:52px; text-align:center;">
-      <div class="section-label" style="justify-content:center; display:block;">Community</div>
-      <h2 style="font-size:clamp(1.1rem,3vw,1.5rem);">Built by Gamers, for Gamers</h2>
-      <p style="max-width:680px; margin:0 auto 14px;">
-        At FF Bio Code, we are passionate about helping Free Fire players create unique and stylish profiles. Our platform is built by gamers who understand how important a great bio can be. Every update, feature, and bio collection is created with the goal of making profile customization simple, creative, and enjoyable for every player.
-      </p>
-      <p style="max-width:680px; margin:0 auto;">
-        Whether you are a new player or a long-time Free Fire fan, FF Bio Code is here to help you discover the latest bio codes, stylish designs, and creative profile ideas. Thousands of players trust our platform to enhance their in-game identity with unique and easy-to-use bio codes. Your profile is more than just text. It reflects your personality, style, and passion for the game.
-      </p>
-    </div>
-
-  </div><!-- /container -->
+<!-- Main About Us content only. Header and footer are intentionally not included. -->
+<main class="about-page">
+  <section class="about-hero" aria-labelledby="about-hero-title">
+    <div class="about-hero__sparks" aria-hidden="true"><i></i><i></i><i></i><i></i></div><div class="about-hero__character" aria-hidden="true"></div>
+    <div class="about-hero__content"><div class="about-badge"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 2.3 6.7L21 11l-6.7 2.3L12 20l-2.3-6.7L3 11l6.7-2.3L12 2Z"></path></svg>About Us</div><h1 id="about-hero-title">About <span>FF Bio Code</span></h1><p>An independent gaming website for Free Fire bio codes, profile ideas, symbols, colour codes, and useful customization tools.</p></div><div class="about-hero__divider" aria-hidden="true"></div>
+  </section>
+  <div class="about-content"><div class="about-container">
+    <section class="about-section about-purpose" aria-labelledby="purpose-title"><div class="about-purpose__intro"><p class="about-eyebrow">Who We Are</p><h2 id="purpose-title">Our Purpose</h2><p class="about-copy">FF Bio code is an independently operated gaming website focused on Free Fire bio codes, stylish bios, symbols, colour codes, profile ideas, and related tools and resources.</p><p class="about-copy">The aim is to make Free Fire profile customization easier to explore, copy, and use.</p></div><div class="about-feature-grid">
+      <article class="about-feature-card"><div class="about-feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"></rect><path d="M8 21h8M12 17v4M9 9l-2 2 2 2M15 9l2 2-2 2"></path></svg></div><h3>Free Bio Codes</h3><p>A growing collection of Free Fire bio codes for different styles and personalities.</p></article>
+      <article class="about-feature-card"><div class="about-feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9c0-1.7-.5-3.3-1.3-4.6A6 6 0 0 0 12 3Z"></path><circle cx="8" cy="10" r="1"></circle><circle cx="12" cy="7" r="1"></circle><circle cx="16" cy="11" r="1"></circle><circle cx="10" cy="15" r="1"></circle></svg></div><h3>Stylish Fonts</h3><p>Cool and readable fonts to make your Free Fire bio stand out.</p></article>
+      <article class="about-feature-card"><div class="about-feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 2.9 6.8 7.1.6-5.4 4.7 1.6 7-6.2-3.7-6.2 3.7 1.6-7L2 9.4l7.1-.6L12 2Z"></path></svg></div><h3>Symbols &amp; Emotes</h3><p>Trendy symbols and emotes to add attitude to your profile.</p></article>
+      <article class="about-feature-card"><div class="about-feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 4 6 6M4 20l6.5-6.5M13 3l8 8-8.5 8.5-8-8L13 3Z"></path><path d="m9 15-4 4M15 9l4-4"></path></svg></div><h3>Colour Codes</h3><p>Free Fire colour codes and combinations for names and bios.</p></article>
+    </div></section>
+    <section class="about-section about-tools" aria-labelledby="tools-title"><div class="about-visual" aria-hidden="true"><span class="about-visual__mark">F</span><span class="about-visual__floor"></span></div><div class="about-tools__copy"><p class="about-eyebrow">What We Do</p><h2 id="tools-title">Our Tools &amp; Resources</h2><p class="about-copy">We offer easy-to-use tools like our FF Bio Code Generator that help you create custom bios in seconds. You can preview, copy, and paste them directly into Free Fire.</p><p class="about-copy">Along with that, you'll find regular updates of new codes, fonts, and symbols so your profile always looks fresh and unique.</p></div></section>
+    <section class="about-section about-commitment" aria-labelledby="standards-title"><div><p class="about-eyebrow">Our Commitment</p><h2 id="standards-title">Our Content Standards</h2><p class="about-copy">We aim to publish original, useful, and easy-to-read information. Details are presented as clearly as possible, with accuracy checked where it can reasonably be verified.</p><p class="about-copy">We focus on helpful player resources while avoiding unnecessary duplication and misleading claims.</p></div><aside class="about-trust-card"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M32 5 54 13v16c0 14-9.3 24.4-22 30C19.3 53.4 10 43 10 29V13l22-8Z"></path><path d="m32 20 3.6 7.4 8.2 1.2-5.9 5.8 1.4 8.2-7.3-3.9-7.3 3.9 1.4-8.2-5.9-5.8 8.2-1.2L32 20Z"></path></svg><div><h3>Free &amp; Easy to Use</h3><p>Bio codes and tools are provided for players to explore, copy, and adapt for their Free Fire profile.</p></div></aside></section>
+    <section class="about-section" aria-label="Content process and policy"><div class="about-policy-grid"><article class="about-info-card about-policy-card"><p class="about-eyebrow">Our Process</p><h3>How We Create Our Content</h3><p>Topics are researched and relevant information is reviewed before publication. Where applicable, bio codes and tools are checked for formatting, readability, and usability.</p><p>Existing content may be reviewed and updated when information changes.</p></article><article class="about-info-card about-policy-card"><p class="about-eyebrow">Keeping Content Current</p><h3>Content Review &amp; Update Policy</h3><p>Free Fire features, codes, events, and related information can change. Content is periodically reviewed, and outdated or incorrect information is updated when identified.</p><p>Please contact FF Bio Code to report information that may need correction.</p></article></div></section>
+    <section class="about-section about-creator" aria-labelledby="creator-title"><div class="about-reveal"><p class="about-eyebrow">FF Bio Code Creator</p><h2 id="creator-title">Meet the Developer</h2><p class="about-copy">FF Bio Code was created by Ayan Karmakar, a WordPress Website Developer and SEO Specialist. He created the site to help Free Fire players find bio codes, symbols, colour combinations, and profile ideas in one straightforward place.</p><p class="about-copy">The goal is to make profile customization easier with useful, readable resources and tools that players can explore at their own pace.</p><nav class="about-creator__actions" aria-label="Ayan Karmakar profile links"><a href="https://github.com/ayan-act/">GitHub</a><a href="https://www.linkedin.com/in/the-ayan/">LinkedIn</a><a href="mailto:Support@ffbiocodes.com">Email</a></nav></div><figure class="about-creator__portrait about-reveal"><img src="https://ffbiocodes.com/wp-content/uploads/2026/07/image.webp" alt="About: Ayan Karmakar, creator and developer of FF Bio Code" width="999" height="1000" loading="lazy" decoding="async"><figcaption><strong>Meet the Developer</strong>Ayan Karmakar</figcaption></figure></section>
+    <section class="about-section" aria-label="Important information"><div class="about-info-grid">
+      <article class="about-info-card about-info-card--disclaimer"><p class="about-eyebrow">Disclaimer</p><h3>Independent Fan-Made Website</h3><p>FF Bio Code is not affiliated with, endorsed by, sponsored by, or officially connected to Garena or Free Fire.</p><p>This independent fan-made website is created for educational and entertainment purposes only.</p></article>
+      <article class="about-info-card about-info-card--contact"><p class="about-eyebrow">Contact</p><h3>Get in Touch</h3><p>Questions, suggestions, feedback, or reports of outdated information are welcome.</p><a class="about-contact-line" href="mailto:Support@ffbiocodes.com"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3 7 9 6 9-6"></path></svg>Support@ffbiocodes.com</a></article>
+      <article class="about-info-card about-info-card--community"><p class="about-eyebrow">Community</p><h3>Join Our Community</h3><p>Stay updated with the latest codes, new styles, and tips. Follow us and be a part of our growing Free Fire community!</p><nav class="about-socials" aria-label="Social community links"><a href="https://www.facebook.com/6ixusff" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V3h-3c-3.3 0-5 2-5 5v3H6v5h3v5h5v-5h3.5l.5-5H14V8c0-.6.4-1 1-1Z"></path></svg></a><a href="https://www.youtube.com/@6ixus_ff?sub_confirmation=1" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.6 7.2a3 3 0 0 0-2.1-2.1C17.6 4.5 12 4.5 12 4.5s-5.6 0-7.5.6a3 3 0 0 0-2.1 2.1C1.8 9.1 1.8 12 1.8 12s0 2.9.6 4.8a3 3 0 0 0 2.1 2.1c1.9.6 7.5.6 7.5.6s5.6 0 7.5-.6a3 3 0 0 0 2.1-2.1c.6-1.9.6-4.8.6-4.8s0-2.9-.6-4.8ZM10 15.5v-7l6 3.5-6 3.5Z"></path></svg></a><a href="/contact-us/" aria-label="Telegram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.6 3.3 2.9 10.5c-1.3.5-1.3 1.3-.2 1.7l4.8 1.5 1.9 5.9c.2.5.1.7.7.7.4 0 .6-.2.8-.4l2.3-2.2 4.8 3.5c.9.5 1.5.2 1.8-.9l3.2-15c.4-1.4-.5-2-1.4-1.6ZM8.3 13.2l10.9-6.9c.5-.3 1-.1.6.3l-8.8 8-.3 3.3-2.4-4.7Z"></path></svg></a><a href="https://www.instagram.com/ff_bgmi_esports/" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.5A4.5 4.5 0 1 1 7.5 12 4.5 4.5 0 0 1 12 7.5Zm0 2A2.5 2.5 0 1 0 14.5 12 2.5 2.5 0 0 0 12 9.5ZM17.8 6a1.2 1.2 0 1 1-1.2 1.2A1.2 1.2 0 0 1 17.8 6Z"></path></svg></a></nav></article>
+    </div></section>
+  </div></div>
 </main>
+<script>
+  (function () {
+    "use strict";
+    var items = document.querySelectorAll(".about-reveal");
+    if (!window.IntersectionObserver) {
+      items.forEach(function (item) { item.classList.add("about-visible"); });
+      return;
+    }
+    var observer = new IntersectionObserver(function (entries, currentObserver) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("about-visible");
+          currentObserver.unobserve(entry.target);
+        }
+      });
+    }, { rootMargin: "180px 0px", threshold: 0.01 });
+    items.forEach(function (item) { observer.observe(item); });
+  }());
+</script>
