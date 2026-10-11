@@ -1,8 +1,8 @@
 <!--
   FF Bio Code — Advertise With Us
   Main-content-only template: place this between the site's existing header and footer.
-  The form intentionally performs client-side validation only; connect its submit handler to
-  the site's secure contact endpoint when one is available.
+  The form validates input in the browser, then sends the inquiry to the configured
+  FormSubmit endpoint. Review delivery and privacy disclosures before deployment.
 -->
 <title>Advertise With Us | Grow Your Brand with FF Bio Code</title>
 <style>
